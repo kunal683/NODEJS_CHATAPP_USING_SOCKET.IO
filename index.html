@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="client/index.css">  
+    <title>Document</title>  
+    <script src="http://localhost:8000/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <div id ="all">
+        <div id = "all-info">
+            <div id = "name">
+                <img src="client/photo/chat.png" alt="--" width="40px">
+                <span style="font-family : Comic Sans MS; font-size: 20px; margin-left: 10px;">NODECHAT
+            </div>
+            <div id = "info">
+                <img src="client/photo/user.png" alt="" width="40px">
+                <div id = "username">KUNAL</div>
+                <div>
+                    <img src="client/photo/tick.png" alt="" width="15px">
+                    <h5>ACTIVE</h5>
+                </div>
+            </div>
+            <div style="height: 350px;">
+                <h4>Active Participants</h4>
+                <div id = "up-active">  
+                    <div id = "active">
+                        <div class="active-div">kunal</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id = "contain-all">
+            <div id="contain-mgs">
+
+            </div>
+            <div id = "mgs">
+                <input type="text " id = "message" style="margin: 0px;">
+                <button type="submit" id = "btn" style="margin: 0px;"> SEND</button>
+            </div>
+        </div>
+        <div id = "side">
+            <div id = "side-bar">
+               
+            </div>
+        </div>
+    </div>
+    
+    <script src="client/index.js"></script>
+</body>
+</html>
